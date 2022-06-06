@@ -1,1 +1,1 @@
-https://hypixel-skyblock.fandom.com/ and tatic.wikia.nocookie.net/hypixel-skyblock/ for images
+https://hypixel-skyblock.fandom.com/ and https://tatic.wikia.nocookie.net/hypixel-skyblock/ for images
