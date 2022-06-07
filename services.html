@@ -3,38 +3,32 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+  html {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  head {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  margin: auto;
+  margin-top: 10px;
   text-align: center;
   font-family: arial;
+  position: absolute;
+  padding: 5px;
 }
 
 .price {
   color: grey;
   font-size: 22px;
-}
-
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.card button:hover {
-  opacity: 0.7;
-}
-  
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .topnav {
   overflow: hidden;
@@ -56,20 +50,19 @@ body {
   color: white;
 }
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
+  box-shadow: inset 0 0 2px grey; 
+  border-radius: 15px;
+  background: white;
 }
 ::-webkit-scrollbar-thumb {
-  background: blue; 
-  border-radius: 10px;
-  box-shadow: inset 0 0 5px grey;
+  background: #2d2de5; 
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 3px lightblue;
 }
 </style>
-</head>
-<body>
 
 <div class="topnav">
   <a class="active" href="https://25hoursaday.github.io/skyflare/home.html">Home</a>
@@ -78,17 +71,28 @@ body {
   <a href="https://25hoursaday.github.io/skyflare/discord.html">Discord</a>
 </div>
 
+</head>
+<body> 
+  
 <div style="padding-left:16px">
   <h1> Services </h1> 
   <h3> The following are the various carry services we provide. You may find the available carries, their prices, requirements, and other information here. </h3>
   
-  <div class="card">
+  <div class="card" id="f1">
   <img src="/w3images/jeans3.jpg" alt="Bonzo" style="width:100%">
   <h1>Floor 1</h1>
   <p class="price">100k normal | 90k bulk</p> 
   <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
   </div>
-  
-</div>
+  <div class="card" id="f2">
+  <img src="/w3images/jeans3.jpg" alt="scarf" style="width:100%">
+  <h1>Floor 2</h1>
+  <p class="price">100k normal | 90k bulk</p> 
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  </div>  
+  </div>
+  <script>
+    document.getElementById("f2").style.marginLeft = "25%";
+  </script>
 </body>
 </html>
